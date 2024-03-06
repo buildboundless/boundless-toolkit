@@ -1,3 +1,2 @@
-* [Overview](/)
 * Environment Variables
-  * [Schema and Validation](environment-variables.md "Schema and Validation")
+  * [Schema and Validation](environment-variables/schema-and-validation.md "Environment Variables | Schema and Validation")
