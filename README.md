@@ -11,9 +11,19 @@ common tasks.
 
 [SendGrid](./src/sendgrid/README.md) - Tools for sending emails with SendGrid.
 
-## Development Setup
+## Docs
+
+Additional documentation can be found [here](https://buildboundless.github.io/boundless-toolkit/).
+
+Docs are generated using [docsify](https://docsify.js.org/#/).
+
+You can find all docs in the `/docs` directory.
+
+## Developing
+
+### Setup
 Run `npm install`
 
-## Build
+### Build
 
 Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
