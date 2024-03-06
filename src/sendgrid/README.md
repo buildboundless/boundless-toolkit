@@ -12,14 +12,25 @@
 
 The best way to use this library is to create helper functions for each email you want to send.
 
-Example
 ```typescript
 import { sendTemplateEmail } from 'boundless-toolkit';
 
-export async function sendPasswordResetEmail(to: string, reset_link: string) {
-    const data = {
-        password_reset_url: reset_link
-    }
-    return sendTemplateEmail(to, data, PASSWORD_RESET_TEMPLATE_ID)
+/**
+ * Add all variables used in the SendGrid template here.
+ */
+interface SendPasswordResetEmailData {
+    url: string
 }
+
+export async function sendPasswordResetEmail(to: string, data: SendPasswordResetEmailData) {
+    return sendTemplateEmail(to, data, 'TEMPLATE_ID')
+}
+```
+
+```typescript
+import { sendPasswordResetEmail } from './email-helpers';
+
+sendPasswordResetEmail('example@buildboundless.com', {
+    url: 'https://example.com/reset-password'
+})
 ```
