@@ -1,2 +1,2 @@
 * [Overview](/)
-* [Environment Variables](/Environment%20Variables/)
+* [Environment Variables](/environment-variables)
