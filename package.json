@@ -13,11 +13,14 @@
     "url": "https://github.com/buildboundless/boundless-toolkit"
   },
   "devDependencies": {
+    "@types/react": "^18.2.74",
     "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@sendgrid/mail": "^8.1.1"
+    "@sendgrid/mail": "^8.1.1",
+    "react": "^18.2.0",
+    "react-native": "^0.73.6"
   }
 }
