@@ -5,7 +5,7 @@ import bcrypt from "bcryptjs";
  * @param password
  */
 export async function generateHashedPassword(password: string): Promise<string> {
-  return await bcrypt.hash(password, 10);
+  return await bcrypt.hash(password, process.env.SALT_ROUNDS || 10);
 }
 
 /**

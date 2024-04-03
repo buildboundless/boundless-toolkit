@@ -11,6 +11,7 @@ common tasks.
 
 ## Services
 [SendGrid](./src/sendgrid/README.md) - Tools for sending emails with SendGrid.
+[Passwords](./src/passwords/README.md) - Hashing and verifying passwords.
 
 ## Docs
 
