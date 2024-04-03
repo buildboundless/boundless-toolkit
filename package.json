@@ -13,11 +13,13 @@
     "url": "https://github.com/buildboundless/boundless-toolkit"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@sendgrid/mail": "^8.1.1"
+    "@sendgrid/mail": "^8.1.1",
+    "bcryptjs": "^2.4.3"
   }
 }
