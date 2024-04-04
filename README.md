@@ -11,6 +11,7 @@ common tasks.
 
 ## Services
 [SendGrid](./src/sendgrid/README.md) - Tools for sending emails with SendGrid.
+[Stripe](./src/stripe/README.md) - Tools for working with Stripe.
 
 ## Docs
 
