@@ -1,9 +1,14 @@
-import { Text as _Text } from "react-native";
+import { Text as _Text, TextStyle } from "react-native";
 
 export type TextProps = {
   text?: string;
+  style?: TextStyle;
 };
 
-export default function Text({ text, ...props }: TextProps) {
-  return <_Text {...props}>{text}</_Text>;
-}
+export const Text = ({ text, style, ...props }: TextProps) => {
+  return (
+    <_Text style={style} {...props}>
+      {text}
+    </_Text>
+  );
+};
