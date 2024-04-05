@@ -7,14 +7,24 @@ export interface Theme {
   errorColor: string;
 
   // Typography
-  fontFamily: string;
-  fontSize: number;
-  fontWeight: "normal" | "bold";
+  typography: {
+    display: ThemeTypography;
+    headline: ThemeTypography;
+    title: ThemeTypography;
+    body: ThemeTypography;
+    label: ThemeTypography;
+  };
 
   // Elevation
   elevationLow: number;
   elevationMedium: number;
   elevationHigh: number;
+}
+
+export interface ThemeTypography {
+  fontFamily: string;
+  fontSize: number;
+  fontWeight: "normal" | "bold";
 }
 
 export const defaultTheme: Theme = {
@@ -26,9 +36,33 @@ export const defaultTheme: Theme = {
   errorColor: "#B00020",
 
   // Typography
-  fontFamily: "Roboto",
-  fontSize: 14,
-  fontWeight: "normal",
+  typography: {
+    display: {
+      fontFamily: "Roboto",
+      fontSize: 34,
+      fontWeight: "bold",
+    },
+    headline: {
+      fontFamily: "Roboto",
+      fontSize: 24,
+      fontWeight: "bold",
+    },
+    title: {
+      fontFamily: "Roboto",
+      fontSize: 20,
+      fontWeight: "bold",
+    },
+    body: {
+      fontFamily: "Roboto",
+      fontSize: 16,
+      fontWeight: "normal",
+    },
+    label: {
+      fontFamily: "Roboto",
+      fontSize: 12,
+      fontWeight: "normal",
+    },
+  },
 
   // Elevation
   elevationLow: 2,
