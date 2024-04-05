@@ -1,4 +1,6 @@
-import { Modal as _Modal } from "react-native";
+import React from "react";
+import { Modal as _Modal, StyleSheet, View } from "react-native";
+import { useTheme } from "../../Theme/ThemeContext";
 
 export interface ModalProps {
   children?: React.ReactNode;
@@ -6,15 +8,27 @@ export interface ModalProps {
   onRequestClose?: () => void;
 }
 
-export default function Modal({
-  children,
-  visible,
-  onRequestClose,
-  ...props
-}: ModalProps) {
+export const Modal = ({ children, visible, onRequestClose }: ModalProps) => {
+  const { theme } = useTheme();
+
   return (
-    <_Modal visible={visible} onRequestClose={onRequestClose} {...props}>
-      {children}
+    <_Modal
+      visible={visible}
+      onRequestClose={onRequestClose}
+      transparent={true}
+      animationType="slide"
+    >
+      <View style={[styles.container, { backgroundColor: theme.surfaceColor }]}>
+        {children}
+      </View>
     </_Modal>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});

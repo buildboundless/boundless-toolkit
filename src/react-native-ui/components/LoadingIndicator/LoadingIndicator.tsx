@@ -1,18 +1,27 @@
 import React from "react";
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { useTheme } from "../../Theme/ThemeContext";
 
-type LoadingIndicatorProps = {
+export type LoadingIndicatorProps = {
   isLoading?: boolean;
-  style?: object;
 };
 
-const LoadingIndicator = ({
-  isLoading = true,
-  ...props
-}: LoadingIndicatorProps) => {
+export const LoadingIndicator = ({ isLoading = true }: LoadingIndicatorProps) => {
+  const { theme } = useTheme();
+
   if (!isLoading) return null;
 
-  return <ActivityIndicator size={"large"} {...props} />;
+  return (
+    <View style={[styles.container, { backgroundColor: theme.surfaceColor }]}>
+      <ActivityIndicator size="large" color={theme.primaryColor} />
+    </View>
+  );
 };
 
-export default LoadingIndicator;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
