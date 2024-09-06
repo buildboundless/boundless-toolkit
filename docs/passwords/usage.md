@@ -5,5 +5,5 @@ This module is ready to use without setup. The number of salting rounds defaults
 
 ## Usage
 ```typescript
-import { generateHashedPassword, comparePassword } from '~/utils/passwords.utils.ts';
+import { generateHashedPassword, comparePassword } from 'boundless-toolkit';
 ```
