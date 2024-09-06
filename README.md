@@ -9,9 +9,6 @@ Each service directory contains a README with setup and usage instructions. Ther
 [additional documentation](https://buildboundless.github.io/boundless-toolkit/) for other
 common tasks.
 
-## Services
-[SendGrid](./src/sendgrid/README.md) - Tools for sending emails with SendGrid.
-
 ## Docs
 
 Additional documentation can be found [here](https://buildboundless.github.io/boundless-toolkit/).
@@ -20,9 +17,12 @@ Docs are generated using [docsify](https://docsify.js.org/#/).
 
 You can find all docs in the `/docs` directory.
 
+To add a new docs entry, create a folder under `/docs` and update `/docs/_sidebar.md` with the new entries for each markdown file.
+
 ## Developing
 
 ### Setup
+
 Run `npm install`
 
 ### Build
