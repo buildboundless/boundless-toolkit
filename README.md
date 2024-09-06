@@ -21,9 +21,12 @@ Docs are generated using [docsify](https://docsify.js.org/#/).
 
 You can find all docs in the `/docs` directory.
 
+To add a new docs entry, create a folder under `/docs` and update `/docs/_sidebar.md` with the new entries for each markdown file.
+
 ## Developing
 
 ### Setup
+
 Run `npm install`
 
 ### Build
