@@ -8,3 +8,4 @@ This should give a technical summary of the changes especially when introducing 
 - [ ] PR description is filled out
 - [ ] Changes are documented in `/docs`
 - [ ] `/docs/_sidebar.md` is updated with new entries
+- [ ] `README.md` is updated with new `/src` entries
