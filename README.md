@@ -12,6 +12,8 @@ common tasks.
 ## Services
 [SendGrid](./src/sendgrid/README.md) - Tools for sending emails with SendGrid.
 
+[Stripe](https://buildboundless.github.io/boundless-toolkit/#/stripe/usage) - Tools for working with Stripe.
+
 ## Docs
 
 Additional documentation can be found [here](https://buildboundless.github.io/boundless-toolkit/).
