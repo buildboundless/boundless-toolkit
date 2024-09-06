@@ -3,3 +3,5 @@
 * AWS
   * [Public S3 Files](aws/public-s3-files.md "AWS | Public S3 Files")
   * [Update Env Variables](aws/update-env-variables.md "AWS | Update Env Variables")
+* SendGrid
+  * [Setup & Usage](sendgrid/setup-usage.md "SendGrid | Setup & Usage")

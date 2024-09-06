@@ -10,7 +10,7 @@ Each service directory contains a README with setup and usage instructions. Ther
 common tasks.
 
 ## Services
-[SendGrid](./src/sendgrid/README.md) - Tools for sending emails with SendGrid.
+[SendGrid](https://buildboundless.github.io/boundless-toolkit/#/sendgrid/setup-usage) - Tools for sending emails with SendGrid.
 
 ## Docs
 
