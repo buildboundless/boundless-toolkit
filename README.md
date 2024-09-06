@@ -11,6 +11,7 @@ common tasks.
 
 ## Services
 [SendGrid](./src/sendgrid/README.md) - Tools for sending emails with SendGrid.
+[Passwords](https://buildboundless.github.io/boundless-toolkit/#/passwords/usage) - Tools for hashing and verifying passwords.
 
 ## Docs
 
